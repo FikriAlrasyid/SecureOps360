@@ -1,58 +1,389 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SecureOps360
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Enterprise IT Operations Management Platform built using Laravel and Filament.
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-13-red)
+![PHP](https://img.shields.io/badge/PHP-8.3-blue)
+![Filament](https://img.shields.io/badge/Filament-5-orange)
+![MySQL](https://img.shields.io/badge/MySQL-Database-green)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Overview
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+SecureOps360 is a centralized IT Operations and Information Security Management Platform designed to help organizations manage IT assets, security incidents, operational risks, and compliance activities through a single dashboard.
 
-## Learning Laravel
+The project was inspired by real-world challenges encountered in enterprise IT environments where asset information, incident records, compliance documentation, and risk assessments are often scattered across spreadsheets and disconnected systems.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Project Type
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+**Self-Initiated Portfolio Project**
 
-## Agentic Development
+Designed and developed independently as a portfolio project to demonstrate practical skills in:
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+- IT Operations
+- Information Security
+- Data Management
+- Risk Assessment
+- Dashboard Development
+- Enterprise Application Design
 
-```bash
-composer require laravel/boost --dev
+---
 
-php artisan boost:install
+## Business Problem
+
+Many organizations struggle with:
+
+- Tracking IT assets efficiently
+- Managing security incidents consistently
+- Monitoring operational risks
+- Maintaining compliance documentation
+- Producing centralized management reports
+
+These activities are often handled manually, increasing the risk of data inconsistency and delayed decision-making.
+
+---
+
+## Solution
+
+SecureOps360 provides a centralized platform that enables organizations to:
+
+- Register and monitor IT assets
+- Record and manage incidents
+- Conduct risk assessments
+- Track compliance status
+- Visualize operational metrics through dashboards
+
+---
+
+# Features
+
+## Dashboard
+
+Executive overview displaying:
+
+- Total Assets
+- Active Incidents
+- High Risk Items
+- Compliance Status
+
+---
+
+## Asset Management
+
+Track organizational assets including:
+
+- Asset Name
+- Category
+- Department
+- Owner
+- Status
+
+Benefits:
+
+- Improve asset visibility
+- Support asset lifecycle management
+
+---
+
+## Incident Management
+
+Record operational and security incidents.
+
+Features:
+
+- Incident Classification
+- Severity Tracking
+- Status Monitoring
+- Resolution Tracking
+
+Benefits:
+
+- Faster incident response
+- Better operational visibility
+
+---
+
+## Risk Assessment
+
+Manage and evaluate risks.
+
+Features:
+
+- Likelihood Assessment
+- Impact Assessment
+- Risk Scoring
+- Risk Prioritization
+
+Formula:
+
+Risk Score = Likelihood × Impact
+
+Benefits:
+
+- Risk-based decision making
+- Better mitigation planning
+
+---
+
+## Compliance Monitoring
+
+Track organizational compliance activities.
+
+Features:
+
+- Compliance Status
+- Control Tracking
+- Review Monitoring
+
+Benefits:
+
+- Improved governance
+- Better audit readiness
+
+---
+
+# Technology Stack
+
+## Backend
+
+- Laravel 13
+
+## Frontend
+
+- Filament 5
+- Livewire
+
+## Database
+
+- MySQL
+
+## Environment
+
+- Laragon
+- PHP 8.3
+
+---
+
+# System Modules
+
+| Module | Purpose |
+|----------|----------|
+| Dashboard | Executive monitoring |
+| Assets | Asset inventory management |
+| Incidents | Incident tracking |
+| Risks | Risk assessment |
+| Compliance | Compliance monitoring |
+
+---
+
+# Database Design
+
+Main Tables:
+
+```text
+users
+assets
+incidents
+risks
+compliances
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Relationships:
 
-## Contributing
+```text
+Assets
+│
+├── Incidents
+│
+├── Risks
+│
+└── Compliance Records
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+# Screenshots
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Dashboard
 
-## Security Vulnerabilities
+Insert dashboard screenshot here.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```text
+docs/screenshots/dashboard.png
+```
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Asset Management
+
+Insert asset management screenshot here.
+
+```text
+docs/screenshots/assets.png
+```
+
+---
+
+## Incident Management
+
+Insert incident screenshot here.
+
+```text
+docs/screenshots/incidents.png
+```
+
+---
+
+## Risk Assessment
+
+Insert risk assessment screenshot here.
+
+```text
+docs/screenshots/risks.png
+```
+
+---
+
+## Compliance Monitoring
+
+Insert compliance screenshot here.
+
+```text
+docs/screenshots/compliance.png
+```
+
+---
+
+# Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/yourusername/SecureOps360.git
+```
+
+Move into project:
+
+```bash
+cd SecureOps360
+```
+
+Install dependencies:
+
+```bash
+composer install
+```
+
+Copy environment file:
+
+```bash
+cp .env.example .env
+```
+
+Generate application key:
+
+```bash
+php artisan key:generate
+```
+
+Configure database in:
+
+```env
+DB_CONNECTION=mysql
+DB_DATABASE=secureops360
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Run migration:
+
+```bash
+php artisan migrate
+```
+
+Seed sample data:
+
+```bash
+php artisan db:seed
+```
+
+Run application:
+
+```bash
+php artisan serve
+```
+
+Access:
+
+```text
+http://localhost:8000
+```
+
+---
+
+# What I Learned
+
+Through this project I gained practical experience in:
+
+- Enterprise application architecture
+- Dashboard design
+- Data modeling
+- Database relationships
+- Laravel development
+- Filament administration panels
+- Information security workflows
+- Operational reporting
+
+---
+
+# Project Impact
+
+This project demonstrates the ability to:
+
+- Translate business requirements into software solutions
+- Design enterprise dashboards
+- Manage operational data effectively
+- Develop scalable management systems
+
+---
+
+# Future Improvements
+
+Potential enhancements include:
+
+- Role-Based Access Control (RBAC)
+- Email Notifications
+- Audit Logging
+- Asset QR Code Tracking
+- Advanced Reporting
+- API Integration
+- Mobile Support
+
+---
+
+# Author
+
+## Fikri Alrasyid
+
+Information Systems Graduate
+
+IT Service Group Leader
+
+SQL Server • Information Security • IT Operations • Data Analytics
+
+---
+
+## Contact
+
+GitHub:
+https://github.com/FikriAlrasyid
+
+LinkedIn:
+https://www.linkedin.com/in/muhammad-fikri-alrasyid-071903244
+
+---
+
+*"Building practical solutions that bridge IT Operations, Information Security, and Business Processes."*

@@ -205,57 +205,6 @@ Assets
 
 ---
 
-# Screenshots
-
-## Dashboard
-
-Insert dashboard screenshot here.
-
-```text
-docs/screenshots/dashboard.png
-```
-
----
-
-## Asset Management
-
-Insert asset management screenshot here.
-
-```text
-docs/screenshots/assets.png
-```
-
----
-
-## Incident Management
-
-Insert incident screenshot here.
-
-```text
-docs/screenshots/incidents.png
-```
-
----
-
-## Risk Assessment
-
-Insert risk assessment screenshot here.
-
-```text
-docs/screenshots/risks.png
-```
-
----
-
-## Compliance Monitoring
-
-Insert compliance screenshot here.
-
-```text
-docs/screenshots/compliance.png
-```
-
----
 
 # Installation
 

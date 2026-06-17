@@ -1,0 +1,45 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('assets', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('asset_code');
+
+            $table->string('asset_name');
+
+            $table->string('category');
+
+            $table->string('owner');
+
+            $table->string('location');
+
+            $table->enum(
+            'status',
+            ['Active','Maintenance','Retired']
+            );
+
+            $table->date('purchase_date');
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('assets');
+    }
+};
